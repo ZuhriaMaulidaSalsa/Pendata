@@ -155,6 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Tugas-1.html">Tugas 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Eksplorasi-Data.html">Mengumpulkan data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">INFORMASI</a></li>
 </ul>
 
     </div>
@@ -384,7 +386,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-17beb113-d4ec-418f-84f0-7bfccd442eec">
+  <div id="df-da032fdd-62b3-448c-a2c8-0a99cc89e06d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -485,7 +487,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-17beb113-d4ec-418f-84f0-7bfccd442eec')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-da032fdd-62b3-448c-a2c8-0a99cc89e06d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -536,12 +538,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-17beb113-d4ec-418f-84f0-7bfccd442eec button.colab-df-convert');
+          document.querySelector('#df-da032fdd-62b3-448c-a2c8-0a99cc89e06d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-17beb113-d4ec-418f-84f0-7bfccd442eec');
+          const element = document.querySelector('#df-da032fdd-62b3-448c-a2c8-0a99cc89e06d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -589,56 +591,56 @@ document.write(`
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">X_train</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/utils/_set_output.py</span> in <span class="ni">wrapped</span><span class="nt">(self, X, *args, **kwargs)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/utils/_set_output.py</span> in <span class="ni">wrapped</span><span class="nt">(self, X, *args, **kwargs)</span>
 <span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="nd">@wraps</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">139</span>     <span class="k">def</span> <span class="nf">wrapped</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
 <span class="ne">--&gt; </span><span class="mi">140</span>         <span class="n">data_to_wrap</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">141</span>         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_to_wrap</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
 <span class="g g-Whitespace">    </span><span class="mi">142</span>             <span class="c1"># only wrap the first output for cross decomposition</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/base.py</span> in <span class="ni">fit_transform</span><span class="nt">(self, X, y, **fit_params)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/base.py</span> in <span class="ni">fit_transform</span><span class="nt">(self, X, y, **fit_params)</span>
 <span class="g g-Whitespace">    </span><span class="mi">876</span>         <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="c1"># fit method of arity 1 (unsupervised transformation)</span>
 <span class="ne">--&gt; </span><span class="mi">878</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="o">**</span><span class="n">fit_params</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="k">else</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">880</span>             <span class="c1"># fit method of arity 2 (supervised transformation)</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/preprocessing/_data.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/preprocessing/_data.py</span> in <span class="ni">fit</span><span class="nt">(self, X, y, sample_weight)</span>
 <span class="g g-Whitespace">    </span><span class="mi">822</span>         <span class="c1"># Reset internal state before fitting</span>
 <span class="g g-Whitespace">    </span><span class="mi">823</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_reset</span><span class="p">()</span>
 <span class="ne">--&gt; </span><span class="mi">824</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">partial_fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sample_weight</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">825</span> 
 <span class="g g-Whitespace">    </span><span class="mi">826</span>     <span class="k">def</span> <span class="nf">partial_fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/preprocessing/_data.py</span> in <span class="ni">partial_fit</span><span class="nt">(self, X, y, sample_weight)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/preprocessing/_data.py</span> in <span class="ni">partial_fit</span><span class="nt">(self, X, y, sample_weight)</span>
 <span class="g g-Whitespace">    </span><span class="mi">859</span> 
 <span class="g g-Whitespace">    </span><span class="mi">860</span>         <span class="n">first_call</span> <span class="o">=</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;n_samples_seen_&quot;</span><span class="p">)</span>
 <span class="ne">--&gt; </span><span class="mi">861</span>         <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_data</span><span class="p">(</span>
 <span class="g g-Whitespace">    </span><span class="mi">862</span>             <span class="n">X</span><span class="p">,</span>
 <span class="g g-Whitespace">    </span><span class="mi">863</span>             <span class="n">accept_sparse</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;csr&quot;</span><span class="p">,</span> <span class="s2">&quot;csc&quot;</span><span class="p">),</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/base.py</span> in <span class="ni">_validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/base.py</span> in <span class="ni">_validate_data</span><span class="nt">(self, X, y, reset, validate_separately, **check_params)</span>
 <span class="g g-Whitespace">    </span><span class="mi">563</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Validation should be done on X, y or both.&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">564</span>         <span class="k">elif</span> <span class="ow">not</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="n">no_val_y</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">565</span>             <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">input_name</span><span class="o">=</span><span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">check_params</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">566</span>             <span class="n">out</span> <span class="o">=</span> <span class="n">X</span>
 <span class="g g-Whitespace">    </span><span class="mi">567</span>         <span class="k">elif</span> <span class="n">no_val_X</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">no_val_y</span><span class="p">:</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/utils/validation.py</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/utils/validation.py</span> in <span class="ni">check_array</span><span class="nt">(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)</span>
 <span class="g g-Whitespace">    </span><span class="mi">877</span>                     <span class="n">array</span> <span class="o">=</span> <span class="n">xp</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">878</span>                 <span class="k">else</span><span class="p">:</span>
 <span class="ne">--&gt; </span><span class="mi">879</span>                     <span class="n">array</span> <span class="o">=</span> <span class="n">_asarray_with_order</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">xp</span><span class="o">=</span><span class="n">xp</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">880</span>             <span class="k">except</span> <span class="n">ComplexWarning</span> <span class="k">as</span> <span class="n">complex_warning</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">881</span>                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
 
-<span class="nn">/usr/local/lib/python3.9/dist-packages/sklearn/utils/_array_api.py</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/sklearn/utils/_array_api.py</span> in <span class="ni">_asarray_with_order</span><span class="nt">(array, dtype, order, copy, xp)</span>
 <span class="g g-Whitespace">    </span><span class="mi">183</span>     <span class="k">if</span> <span class="n">xp</span><span class="o">.</span><span class="vm">__name__</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;numpy&quot;</span><span class="p">,</span> <span class="s2">&quot;numpy.array_api&quot;</span><span class="p">}:</span>
 <span class="g g-Whitespace">    </span><span class="mi">184</span>         <span class="c1"># Use NumPy API to support order</span>
 <span class="ne">--&gt; </span><span class="mi">185</span>         <span class="n">array</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">186</span>         <span class="k">return</span> <span class="n">xp</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">187</span>     <span class="k">else</span><span class="p">:</span>
 
-<span class="ne">ValueError</span>: could not convert string to float: &#39;60-69&#39;
+<span class="ne">ValueError</span>: could not convert string to float: &#39;30-39&#39;
 </pre></div>
 </div>
 </div>
