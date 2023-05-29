@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Science of Data</title>
+    <title>Tugas - ANNBP_PCA pada data iris &#8212; Science of Data</title>
   
   
   
@@ -63,8 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'PCA-ANNBP';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="PCA-DT.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="PCA-KNN.html" />
+    <link rel="next" title="Tugas - DT_PCA pada data iris" href="PCA-DT.html" />
+    <link rel="prev" title="Tugas - KNN_PCA pada data iris" href="PCA-KNN.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Eksplorasi%20Data.html">Tugas - Eksplorasi data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Database.html">Tugas - Database Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Naive%20Bayes.html">Naive Bayes Classification pada Iris Dataset</a></li>
@@ -164,6 +164,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS Pendat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Backpro.html">Menghitung Manual Backpropagation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PCA-Naive.html">Tugas - Naive_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-KNN.html">Tugas - KNN_PCA pada data iris</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas - ANNBP_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-DT.html">Tugas - DT_PCA pada data iris</a></li>
 </ul>
 
     </div>
@@ -334,9 +337,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -347,19 +348,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Tugas - ANNBP_PCA pada data iris</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -369,7 +362,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>ANNBP_PCA</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-annbp-pca-pada-data-iris">
+<h1>Tugas - ANNBP_PCA pada data iris<a class="headerlink" href="#tugas-annbp-pca-pada-data-iris" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -389,7 +383,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bc9a8f5a-5c7b-46e0-a033-fc0f5febae37">
+  <div id="df-e8bb9c40-dc1b-45ab-b6e0-ea0b16f8eba5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -460,7 +454,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bc9a8f5a-5c7b-46e0-a033-fc0f5febae37')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e8bb9c40-dc1b-45ab-b6e0-ea0b16f8eba5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -511,12 +505,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bc9a8f5a-5c7b-46e0-a033-fc0f5febae37 button.colab-df-convert');
+          document.querySelector('#df-e8bb9c40-dc1b-45ab-b6e0-ea0b16f8eba5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bc9a8f5a-5c7b-46e0-a033-fc0f5febae37');
+          const element = document.querySelector('#df-e8bb9c40-dc1b-45ab-b6e0-ea0b16f8eba5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2003,6 +1997,7 @@ Training loss did not improve more than tol=0.001000 for 10 consecutive epochs. 
   </div>
   </div></div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -2041,7 +2036,7 @@ Training loss did not improve more than tol=0.001000 for 10 consecutive epochs. 
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas - KNN_PCA pada data iris</p>
       </div>
     </a>
     <a class="right-next"
@@ -2049,7 +2044,7 @@ Training loss did not improve more than tol=0.001000 for 10 consecutive epochs. 
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas - DT_PCA pada data iris</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2062,20 +2057,6 @@ Training loss did not improve more than tol=0.001000 for 10 consecutive epochs. 
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

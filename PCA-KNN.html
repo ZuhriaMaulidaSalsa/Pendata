@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Science of Data</title>
+    <title>Tugas - KNN_PCA pada data iris &#8212; Science of Data</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'PCA-KNN';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="PCA-ANNBP.html" />
+    <link rel="next" title="Tugas - ANNBP_PCA pada data iris" href="PCA-ANNBP.html" />
     <link rel="prev" title="Tugas - Naive_PCA pada data iris" href="PCA-Naive.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -155,7 +155,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Eksplorasi%20Data.html">Tugas - Eksplorasi data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Database.html">Tugas - Database Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Naive%20Bayes.html">Naive Bayes Classification pada Iris Dataset</a></li>
@@ -164,6 +164,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS Pendat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Backpro.html">Menghitung Manual Backpropagation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PCA-Naive.html">Tugas - Naive_PCA pada data iris</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas - KNN_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-ANNBP.html">Tugas - ANNBP_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-DT.html">Tugas - DT_PCA pada data iris</a></li>
 </ul>
 
     </div>
@@ -334,9 +337,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -347,19 +348,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Tugas - KNN_PCA pada data iris</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -369,7 +362,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>KNN_PCA</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-knn-pca-pada-data-iris">
+<h1>Tugas - KNN_PCA pada data iris<a class="headerlink" href="#tugas-knn-pca-pada-data-iris" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -389,7 +383,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e74ea7e9-7e19-4bd9-bf1d-f021e617be98">
+  <div id="df-82482afd-7134-4d21-bf6a-cf4c073aa374">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -460,7 +454,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e74ea7e9-7e19-4bd9-bf1d-f021e617be98')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-82482afd-7134-4d21-bf6a-cf4c073aa374')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -511,12 +505,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e74ea7e9-7e19-4bd9-bf1d-f021e617be98 button.colab-df-convert');
+          document.querySelector('#df-82482afd-7134-4d21-bf6a-cf4c073aa374 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e74ea7e9-7e19-4bd9-bf1d-f021e617be98');
+          const element = document.querySelector('#df-82482afd-7134-4d21-bf6a-cf4c073aa374');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -883,7 +877,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-1e1bd2fc-a8df-4480-8d03-cc7df396f156">
+  <div id="df-1dd8cb8d-0330-4d08-84d9-20a54df483a8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -967,7 +961,7 @@ Eigenvelues
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1e1bd2fc-a8df-4480-8d03-cc7df396f156')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1dd8cb8d-0330-4d08-84d9-20a54df483a8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1018,12 +1012,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1e1bd2fc-a8df-4480-8d03-cc7df396f156 button.colab-df-convert');
+          document.querySelector('#df-1dd8cb8d-0330-4d08-84d9-20a54df483a8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1e1bd2fc-a8df-4480-8d03-cc7df396f156');
+          const element = document.querySelector('#df-1dd8cb8d-0330-4d08-84d9-20a54df483a8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1053,7 +1047,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f3da606f-4407-4a76-97bd-3feaa03e26fc">
+  <div id="df-7c765029-8206-425f-b168-1e3222601078">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1149,7 +1143,7 @@ Eigenvelues
 </table>
 <p>150 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f3da606f-4407-4a76-97bd-3feaa03e26fc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7c765029-8206-425f-b168-1e3222601078')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1200,12 +1194,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f3da606f-4407-4a76-97bd-3feaa03e26fc button.colab-df-convert');
+          document.querySelector('#df-7c765029-8206-425f-b168-1e3222601078 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f3da606f-4407-4a76-97bd-3feaa03e26fc');
+          const element = document.querySelector('#df-7c765029-8206-425f-b168-1e3222601078');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1237,7 +1231,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b818c933-49e8-4ca4-9808-1a01f74b02c5">
+  <div id="df-449cdcc9-c530-4998-acfe-2cf641f8e56b">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1296,7 +1290,7 @@ Eigenvelues
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b818c933-49e8-4ca4-9808-1a01f74b02c5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-449cdcc9-c530-4998-acfe-2cf641f8e56b')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1347,12 +1341,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b818c933-49e8-4ca4-9808-1a01f74b02c5 button.colab-df-convert');
+          document.querySelector('#df-449cdcc9-c530-4998-acfe-2cf641f8e56b button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b818c933-49e8-4ca4-9808-1a01f74b02c5');
+          const element = document.querySelector('#df-449cdcc9-c530-4998-acfe-2cf641f8e56b');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1453,7 +1447,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-f37e89b1-d7c7-4904-aaad-cc4fdf3b971d">
+  <div id="df-d5a5d910-e138-47b9-8c48-7b17c5d102a0">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1631,7 +1625,7 @@ Eigenvelues
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f37e89b1-d7c7-4904-aaad-cc4fdf3b971d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-d5a5d910-e138-47b9-8c48-7b17c5d102a0')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1682,12 +1676,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f37e89b1-d7c7-4904-aaad-cc4fdf3b971d button.colab-df-convert');
+          document.querySelector('#df-d5a5d910-e138-47b9-8c48-7b17c5d102a0 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f37e89b1-d7c7-4904-aaad-cc4fdf3b971d');
+          const element = document.querySelector('#df-d5a5d910-e138-47b9-8c48-7b17c5d102a0');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1707,6 +1701,7 @@ Eigenvelues
     </div>
   </div>
   </div></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -1754,7 +1749,7 @@ Eigenvelues
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas - ANNBP_PCA pada data iris</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1767,20 +1762,6 @@ Eigenvelues
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>

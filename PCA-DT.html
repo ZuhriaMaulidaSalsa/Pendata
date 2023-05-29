@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Science of Data</title>
+    <title>Tugas - DT_PCA pada data iris &#8212; Science of Data</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'PCA-DT';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="PCA-ANNBP.html" />
+    <link rel="prev" title="Tugas - ANNBP_PCA pada data iris" href="PCA-ANNBP.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,7 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Eksplorasi%20Data.html">Tugas - Eksplorasi data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Database.html">Tugas - Database Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Naive%20Bayes.html">Naive Bayes Classification pada Iris Dataset</a></li>
@@ -163,6 +163,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS Pendat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Backpro.html">Menghitung Manual Backpropagation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="PCA-Naive.html">Tugas - Naive_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-KNN.html">Tugas - KNN_PCA pada data iris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PCA-ANNBP.html">Tugas - ANNBP_PCA pada data iris</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas - DT_PCA pada data iris</a></li>
 </ul>
 
     </div>
@@ -333,9 +336,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -346,19 +347,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Tugas - DT_PCA pada data iris</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -368,7 +361,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <p><strong>DT_PCA</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tugas-dt-pca-pada-data-iris">
+<h1>Tugas - DT_PCA pada data iris<a class="headerlink" href="#tugas-dt-pca-pada-data-iris" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -388,7 +382,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-36e9d8fe-421d-4ffa-8e8e-0f3109da144b">
+  <div id="df-2678f5d7-318f-4684-9fb5-31cc055133f2">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -459,7 +453,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-36e9d8fe-421d-4ffa-8e8e-0f3109da144b')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2678f5d7-318f-4684-9fb5-31cc055133f2')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -510,12 +504,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-36e9d8fe-421d-4ffa-8e8e-0f3109da144b button.colab-df-convert');
+          document.querySelector('#df-2678f5d7-318f-4684-9fb5-31cc055133f2 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-36e9d8fe-421d-4ffa-8e8e-0f3109da144b');
+          const element = document.querySelector('#df-2678f5d7-318f-4684-9fb5-31cc055133f2');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1939,6 +1933,7 @@ Test set score: 0.36
 <img alt="_images/ea0bafafd614be8bcfb93e979b44f315e539ab6e92cfef326c3bee81efb4ee85.png" src="_images/ea0bafafd614be8bcfb93e979b44f315e539ab6e92cfef326c3bee81efb4ee85.png" />
 </div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1977,7 +1972,7 @@ Test set score: 0.36
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas - ANNBP_PCA pada data iris</p>
       </div>
     </a>
 </div></div>
@@ -1989,20 +1984,6 @@ Test set score: 0.36
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
